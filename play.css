@@ -1,0 +1,131 @@
+﻿/* interactive */
+
+#clues {
+	bottom:0;
+    z-index:2;
+    box-sizing:border-box;
+    background-color:rgba(255,255,255,.90);
+    position:sticky;
+    position: -webkit-sticky;
+	/*border-top:5px solid #38341c;*/
+    max-width:900px;
+    margin:auto;
+	padding-top:5px;
+    display:flex;
+	font-size:14px;
+}
+
+#hidden-field {
+    border:none;
+    background-color:transparent;
+    position:absolute;
+    left:0;
+    top:-100px;
+    width:20px;
+    outline:none;
+    text-align:left;
+    opacity:0;
+    /*pointer-events:none;*/
+    z-index:-10;
+}
+
+#across-box, #down-box {
+    flex:1;
+}
+
+#across-box {
+    margin-right:10px;
+}
+
+#down-box {
+    margin-left:10px;
+}
+
+#clues h5 {
+	font-size:14px;
+	margin-bottom:5px;
+}
+
+#crossword {
+	text-align:center;
+}
+
+#clues ol {
+	overflow:auto;
+	height:calc(25vh);
+	list-style-type:none;
+	padding-top:0;
+}
+
+#clues ol li {
+    line-height:1.2;
+    padding:2px;
+}
+
+#clues li, #clues p {
+	margin-bottom:5px;
+}
+
+#clues li.active {
+	background-color:#006a97;
+    color:#fff;
+}
+
+#stage-2 {
+	border-bottom:none;
+}
+
+.cx g rect {
+    cursor:pointer;
+}
+
+.cx .highlighted rect {
+	fill:#006a97;
+}
+
+.cx svg {
+    max-width:100%;
+    height:auto;
+}
+
+.cx .wrong .cx-a {
+    font-weight:bold;
+    fill:#ab0d0d;
+}
+
+.cx .correct .cx-a {
+    font-weight:bold;
+    fill:#009900;
+}
+
+.cx .active rect {
+	fill:#009adb;
+}
+
+.cx .highlighted .cx-a {
+    fill:#fff;
+}
+
+#clues li {
+    cursor:pointer;
+}
+
+#print-select {
+    max-width:100px;
+}
+
+#clues .correct:before {
+    content:"\2713";
+    display:inline-block;
+    width:10px;
+    font-weight:bold;
+    color:#009900;
+}
+
+#clues .wrong:before {
+    content:"x";
+    display:inline-block;
+    width:10px;
+    font-weight:bold;
+    color:#ab0d0d;
+}

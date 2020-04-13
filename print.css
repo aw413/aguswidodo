@@ -1,0 +1,74 @@
+﻿#header {
+    display:none;
+}
+
+#finish-up, #finish-up2 {
+    display:none;
+}
+
+.print-hide {
+    display:none;
+}
+
+#stage-2 {
+    border:none;
+}
+
+#clues {
+    position:static;
+}
+
+#clues-inner {
+    border:none;
+}
+
+#clues ol {
+    overflow:visible;
+    height:auto;
+}
+
+#crossword {
+    margin-bottom:20px;
+}
+
+.cx .highlighted rect {
+    fill:transparent;
+}
+
+.cx .active rect {
+    fill:transparent;
+}
+
+.cx .wrong .cx-a {
+    fill:#ab0d0d !important;
+}
+
+.cx .correct .cx-a {
+    fill:#009900 !important;
+}
+
+#clues {
+    border-top:none;
+    position:static;
+    max-width:none;
+}
+
+#clues ol {
+    overflow:auto;
+    height:auto;
+}
+
+#clues li.active {
+    color:inherit;
+    background-color:inherit;
+
+}
+
+.promise {
+    display:none;
+}
+
+/*
+.cx .highlighted .cx-a {
+    fill:inherit;
+}*/
